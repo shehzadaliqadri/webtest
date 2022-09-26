@@ -26,10 +26,12 @@ signupBtn.addEventListener("click", () => {
     .then((userCredential) => {
       const user = userCredential.user;
       console.log("created", user);
+      console.log("shehzad");
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
-      console.log("error =>", errorCode);
+      console.log("error =>", errorCode, errorMessage);
+      console.log("shehzad");
     });
 });
